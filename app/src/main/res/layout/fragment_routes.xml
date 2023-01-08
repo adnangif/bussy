@@ -6,6 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".RoutesFragment">
         <com.google.android.material.appbar.AppBarLayout
+            style="@style/Widget.MaterialComponents.AppBarLayout.PrimarySurface"
             android:id="@+id/appbar_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -13,6 +14,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:title="Routes"
+                    app:titleTextColor="@color/md_theme_light_onPrimary"
+                    app:navigationIcon="@drawable/ic_baseline_route_24"
+                    app:navigationIconTint="@color/md_theme_light_onPrimary"
                     />
 
         </com.google.android.material.appbar.AppBarLayout>

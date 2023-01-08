@@ -4,13 +4,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:gravity="center"
     tools:context=".SearchFragment"
     android:background="@drawable/gradient_2"
     >
 
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_alignParentTop="true"
+        style="@style/Widget.MaterialComponents.AppBarLayout.PrimarySurface"
+        android:id="@+id/appbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.appbar.MaterialToolbar
+            app:navigationIcon="@drawable/ic_baseline_home_24"
+            app:navigationIconTint="@color/md_theme_light_onPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="Home"
+            app:titleTextColor="@color/md_theme_light_onPrimary"
+            />
+
+    </com.google.android.material.appbar.AppBarLayout>
 
     <com.google.android.material.card.MaterialCardView
+        android:layout_centerVertical="true"
         android:layout_width="match_parent"
         android:layout_height="350dp"
         android:layout_margin="20dp"
